@@ -153,6 +153,14 @@ nav .lname {
     display: none;
 }
 
+/* NAVIGATION HOVER EFFECT */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
 /* PROFILE PICTURE */
 .profile-picture {
     background: url("../images/sebastian.jpg") no-repeat;
@@ -173,6 +181,8 @@ p {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
+    background-color: rgba(202, 216, 216, 0.699);
+    padding-bottom: 40px;
 }
 
 
@@ -243,6 +253,26 @@ p {
 .shuffle-group .shuffle-me:first-child h1 {
     margin-top: 190px;
     font-size: 30px;
+}
+
+/* SKILLS */
+
+.skill-article {
+    margin-top: 15px;
+}
+
+.skill {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.skill-box {
+    width: 300px;
+}
+
+.sub-skill p {
+    text-align: center;
 }
 
 /*
