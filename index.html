@@ -25,6 +25,10 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN"
 	 crossorigin="anonymous"></script>
 
+	<!-- JQUERY -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="/shuffle-images/jquery.shuffle-images.js"></script>
+
 	<!--[if lte IE 9]>
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 		<![endif]-->
@@ -78,28 +82,64 @@
 		<div class="container">
 			<h2>ABOUT ME</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-				aliqua. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor eu. Dui id ornare arcu odio ut sem. Massa
-				tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Cursus turpis massa tincidunt dui ut ornare lectus
-				sit amet. Leo vel fringilla est ullamcorper eget nulla facilisi. Nibh cras pulvinar mattis nunc sed blandit libero
-				volutpat. Neque viverra justo nec ultrices dui sapien eget mi. Nulla malesuada pellentesque elit eget gravida cum.
-				Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Egestas maecenas pharetra convallis posuere morbi. At
-				auctor urna nunc id cursus metus aliquam eleifend mi. Interdum consectetur libero id faucibus nisl tincidunt eget
-				nullam non. Nec dui nunc mattis enim. Interdum velit laoreet id donec. Pellentesque habitant morbi tristique
-				senectus et netus et. Consectetur adipiscing elit pellentesque habitant morbi tristique senectus et. Eget dolor
-				morbi non arcu risus.
+				I am an innovative self-starter and a creative entrepreneur with a passion in both technology and education. This
+				is evident by my ability to create a business when I was 17. I constantly remind myself of the way my father runs
+				his business while making a positive impact on the society through contributing to various charitable causes.
+				Within one year, I donated part of my business profit to fund a small primary school in Jakarta with textbooks. As
+				William Clay Ford Jr. once said, "Creating a strong business and building a better world are not conflicting goals
+				- they are both essential ingredients from long-term success." This is a motto that I live by and I firmly believe
+				that corporate social responsibility is an essential principle that every business should embody and practice.
 			</p>
+
 			<p>
-				Ullamcorper malesuada proin libero nunc consequat interdum varius sit. Eget magna fermentum iaculis eu non diam. Eu
-				ultrices vitae auctor eu augue. In nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ultricies mi eget
-				mauris pharetra et ultrices neque. Gravida in fermentum et sollicitudin ac orci phasellus. A cras semper auctor
-				neque vitae tempus. Congue nisi vitae suscipit tellus mauris a. Vitae ultricies leo integer malesuada. Pellentesque
-				habitant morbi tristique senectus et. Sit amet est placerat in egestas. Amet consectetur adipiscing elit
-				pellentesque habitant morbi. Fringilla urna porttitor rhoncus dolor. Non blandit massa enim nec dui nunc mattis
-				enim. Phasellus faucibus scelerisque eleifend donec.
+				It has always been my life goal to create or work in an impactful company. With my drive and passion in technology
+				related
+				business fields, I hope to make a difference in the world by actively engaging society and bringing accessible
+				education to children living in underprivileged neighborhoods around the world.
 			</p>
 		</div>
 	</article>
+
+	<!-- GALLERY -->
+	<!-- https://github.com/peachananr/shuffle-images -->
+	<div class="wrapper">
+		<div class="gallery-container">
+			<h1>Travel Diaries</h1>
+			<div class="shuffle-group">
+				<div data-si-mousemove-trigger="100" class="shuffle-me">
+					<div class="info">
+						<h1>United States</h1>
+					</div>
+					<div class="images">
+						<img src="images/us1.jpeg">
+						<img src="images/us2.jpg">
+						<img src="images/us3.jpg">
+					</div>
+				</div>
+				<div class="shuffle-me">
+					<div class="info">
+						<h1>Europe</h1>
+					</div>
+					<div class="images">
+							<img src="images/eu1.jpg">
+							<img src="images/eu2.jpg">
+							<img src="images/eu3.jpg">
+							<img src="images/eu4.jpg">
+					</div>
+				</div>
+				<div class="shuffle-me">
+					<div class="info">
+						<h1>Southeast Asia</h1>
+					</div>
+					<div class="images">
+							<img src="images/asia1.jpeg">
+							<img src="images/asia2.jpg">
+							<img src="images/asia3.jpeg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script>
 		/* Set the width of the side navigation to 250px */
@@ -111,6 +151,17 @@
 		function closeNav() {
 			document.getElementById("mySidenav").style.width = "0";
 		}
+	</script>
+
+	<script>
+		$(".shuffle-me").shuffleImages({
+			trigger: "imageMouseMove", // Choose which type of trigger you want here. Available options are "imageMouseMove", "imageHover", "documentMouseMove", and "documentScroll". "imageMouseMove" will trigger when your mouse over the image and move your cursor. "imageHover" will trigger when you mouse over without moving your cursor. "documentMouseMove" will trigger when cursor is being moved anywhere on the page. "documentScroll" will trigger when you scroll the page. The default value is "imageMouseMove"
+			triggerTarget: false, // For "imageMouseMove", and "imageHover" only, you can set which element to trigger the image shuffle when mouse over. For example, if you want a container ".main" to trigger an image shuffle instead of the image itself, put $(".main") for this option. Default value is false.
+			mouseMoveTrigger: 50, // For "imageMouseMove" only, you can set how many pixels you have to move in order to trigger one image shuffle. The lower the faster. The default value is 50.
+			hoverTrigger: 200, // For "imageHover" only, you can set how long you have to hover the image until it shuffles to other images. The option accepts milliseconds without unit. The default value is 200.
+			scrollTrigger: 100, // For "documentScroll" only, you can set how many pixels you have to scroll to see the image shuffle. The default value is 100.
+			target: "> img" // In case you have a complete HTML structure, you can set your own custom selector to your images here. The default value is "> img" which means images that are directly under the "shuffle-me" will be used to shuffle.
+		});
 	</script>
 </body>
 
