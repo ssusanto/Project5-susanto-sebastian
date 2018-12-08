@@ -159,6 +159,9 @@ a {
     color: black;
 }
 
+a:hover {
+    color: grey;
+}
 
 
 /* PROFILE PICTURE */
@@ -181,8 +184,10 @@ p {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    background-color: rgba(202, 216, 216, 0.699);
+    /* background-color: rgba(202, 216, 216, 0.699); */
     padding-bottom: 40px;
+    background-image: url("../images/marble2.jpg");
+    background-size: cover;
 }
 
 
@@ -273,8 +278,18 @@ p {
 
 .sub-skill p {
     text-align: center;
+    padding-bottom: 20px;
 }
 
+/* FOOTER */
+.footer {
+    background-color: #B6B6B6;
+}
+
+.footer section {
+    display: flex;
+    justify-content: space-evenly;
+}
 /*
     TYPOGRAPHY
 */
