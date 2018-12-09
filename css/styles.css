@@ -383,7 +383,22 @@ input[type=submit]:hover {
     text-align: center;
 }
 
+/* CSS FOR WORKEXPERIENCE PAGE */
 
+.work ul {
+    /* display: inline-block; */
+    text-align: justify;
+    line-height: 25px;
+}
+
+.work ul li {
+    margin-bottom: 15px;
+}
+
+ hr {
+     width: 80%;
+ }
+ 
 /* MEDIA QUERIES */
 @media (min-width: 100px) {
 
