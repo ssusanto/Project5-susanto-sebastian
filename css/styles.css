@@ -398,7 +398,7 @@ input[type=submit]:hover {
  hr {
      width: 80%;
  }
- 
+
 /* MEDIA QUERIES */
 @media (min-width: 100px) {
 
@@ -430,6 +430,10 @@ input[type=submit]:hover {
         font-size: 12px;
         margin: 15px 35px;
     }
+
+    .work ul {
+        font-size: 12px;
+    }
 }
 
 
@@ -443,6 +447,10 @@ input[type=submit]:hover {
 
     .wrapper {
         display: none;
+    }
+
+    .work ul {
+        font-size: 14px;
     }
 }
 
@@ -493,6 +501,10 @@ input[type=submit]:hover {
 
     .wrapper {
         display: block;
+    }
+
+    .work ul {
+        font-size: 16px;
     }
 
 }
