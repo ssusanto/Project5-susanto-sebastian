@@ -177,6 +177,30 @@ p {
     line-height: 30px;
 }
 
+/* QUOTE */
+.quote-article {
+    background-color: #B6B6B6;
+}
+
+.quote h3 {
+    font-size: 23px;
+}
+
+.quote h4 {
+    font-size: 18px;
+}
+
+.quote {
+    border-style: solid;
+    /* background: rgba(0, 0, 0, 0.9); */
+    /* color: black; */
+    color: white;
+}
+
+.quote-tip {
+    font-size: 32px;
+}
+
 /* JQUERY GALLERY */
 .wrapper {
     height: auto !important;
